@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0f0f14">
+  <title>Mi Catálogo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="app-header">
+    <h1>🎬 Mi Catálogo</h1>
+  </header>
+
+  <!-- Barra de categorías (scroll horizontal) -->
+  <nav class="categorias" id="categorias">
+    <button class="cat-btn active" data-cat="peliculas">Películas</button>
+    <button class="cat-btn" data-cat="series">Series</button>
+    <button class="cat-btn" data-cat="novelas">Novelas</button>
+    <button class="cat-btn" data-cat="animes">Animes</button>
+    <button class="cat-btn" data-cat="munequitos">Muñequitos</button>
+    <button class="cat-btn" data-cat="shows">Shows</button>
+    <button class="cat-btn" data-cat="documentales">Documentales</button>
+  </nav>
+
+  <!-- Buscador -->
+  <div class="buscador">
+    <input type="text" id="buscar" placeholder="🔍 Buscar por título o género...">
+  </div>
+
+  <!-- Lista de audiovisuales -->
+  <main id="lista" class="lista"></main>
+
+  <!-- Estado vacío -->
+  <div id="vacio" class="vacio oculto">
+    <p>No hay resultados 😢</p>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
